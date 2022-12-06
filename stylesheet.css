@@ -1,0 +1,85 @@
+*{
+    font-family: Poppins,'Open Sans';
+}
+
+:root{
+    --blue: #00252E;
+    --white: #FFFFFF;
+    --pink: #FF52C1;
+    --ash: #808E9A;
+    --text-opacity: 0.5;
+}
+
+body{
+    margin: 0;
+    padding: 0 8%;
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 46px;
+    /* background: url(/images/bg-hero-desktop.svg); */
+}
+
+.logo{
+    width: 200px;
+    height: 31px;
+}
+
+
+.nav1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 24px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: black;
+    background-color: var(--white);
+    padding: 14px 64px;
+}
+.nav1:hover{
+    opacity: var(--text-opacity);
+}
+
+.header-content{
+    height: 741px;
+}
+
+.container1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 90%;
+    margin: 68px 0;
+}
+
+.card-container{
+    position: absolute;
+    width: 50%;
+}
+.nav-button{
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    border-radius: 24px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: var(--white);
+    background: var(--pink);
+    padding: 18px 69px;
+}
+.nav-button:hover{
+    opacity: var(--text-opacity);
+}
+
+.mockups{
+    position: absolute;
+    width: 680px;
+    height: 482px;
+}
+
+@media(min-width: 375px){
+    .header{
+        /* background-image: url(./images/bg-hero-mobile.svg); */
+    }
+}
