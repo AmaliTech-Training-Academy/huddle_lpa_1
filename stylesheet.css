@@ -10,9 +10,25 @@
     --text-opacity: 0.5;
 }
 
+p{
+    font-family: 'Open Sans';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Poppins;
+}
+
 body{
     margin: 0;
     padding: 0 8%;
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header-content{
+    height: 741px;
 }
 
 .header{
@@ -43,20 +59,16 @@ body{
     opacity: var(--text-opacity);
 }
 
-.header-content{
-    height: 741px;
-}
 
 .container1{
     position: relative;
     display: flex;
     justify-content: space-between;
-    gap: 90%;
+    column-gap: 10%;
     margin: 68px 0;
 }
 
 .card-container{
-    position: absolute;
     width: 50%;
 }
 .nav-button{
@@ -64,6 +76,7 @@ body{
     border-radius: 24px;
     font-family: 'Open Sans';
     font-size: 14px;
+    width: 140px;
     color: var(--white);
     background: var(--pink);
     padding: 18px 69px;
@@ -73,9 +86,13 @@ body{
 }
 
 .mockups{
-    position: absolute;
     width: 680px;
     height: 482px;
+}
+
+.mockups > img{
+    width: 517.5px;
+    height: 369.5px;
 }
 
 @media(min-width: 375px){
